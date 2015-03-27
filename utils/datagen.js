@@ -113,27 +113,32 @@ exports.generateArrayOfTimeObjects = function(n) {
   });
 };
 
-exports.generateArrayOfTimeOHLCObjects = function(n) {
+exports.generateArrayOfDataPointObjects = function(n) {
+  // {"id":"MDAwMTg2YTEwMDAxMjRmYTU0ZjU1Y2U0MzcyZmI3NTAwMDAzAA==„,
+  //
+  var dataPoints = [75000, 75005, 75010];
+
   function randomDate(start, end) {
       return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
   }
 
   randomDate(new Date(2000, 0, 1), new Date())
   var data = [];
+  var date = new Date();
   for (var i = 0; i < n; i++) {
-    var date = randomDate(new Date(2012, 0, 1), new Date());
-    var ohlc = { 
-                  open: Math.random() * 1000,
-                  close: Math.random() * 1000
-                };
-    ohlc.high = Math.max(ohlc.open, ohlc.close) * (1 + Math.random());
-    ohlc.low = Math.min(ohlc.open, ohlc.close) * (1 - Math.random());
-    ohlc.x = date.valueOf();
-
-    data.push(ohlc);
+    var timeStamp = randomDate(new Date(), new Date(date.getTime() + 60000));
+    var value = Math.random()<.5;
+    var datapointId = dataPoints[Math.floor(Math.random() * dataPoints.length)];
+    var point = {"id":"id-" + i, "timeStamp": timeStamp, "stationId":100001,"datapointId": datapointId,"value":value}
+    var timeStamp = randomDate(new Date(), new Date(date.getTime() + 60001));
+    data.push(point);
+    if (i > 0) {
+      var point = {"id":"id-" + i, "timeStamp": timeStamp, "stationId":100001,"datapointId": datapointId,"value":data[i-1].value}
+      data.push(point);
+    }
   } 
   return data.sort(function(a, b) {
-    return a.x - b.x;
+    return a.timeStamp - b.timeStamp;
   });
 };
 

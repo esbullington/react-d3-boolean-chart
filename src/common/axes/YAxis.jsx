@@ -4,7 +4,6 @@ var React = require('react');
 var d3 = require('d3');
 var AxisTicks = require('./AxisTicks');
 var AxisLine = require('./AxisLine');
-var Label = require('./Label');
 
 module.exports = React.createClass({
 
@@ -68,14 +67,6 @@ module.exports = React.createClass({
           scale={props.yScale}
           orient={props.yOrient}
           {...props}
-        />
-        <Label
-          label={props.yAxisLabel}
-          offset={props.yAxisLabelOffset}
-          orient={props.yOrient}
-          margins={props.margins}
-          height={props.height}
-          width={props.width}
         />
       </g>
     );

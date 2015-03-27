@@ -6,7 +6,6 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <h4>{this.props.title}</h4>
         <svg
           viewBox={this.props.viewBox}
           width={this.props.width}

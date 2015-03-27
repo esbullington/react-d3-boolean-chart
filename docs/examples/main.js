@@ -16,11 +16,11 @@ var Demos = React.createClass({
 
     var binaryData = [
       { 
-        name: 'series1',
+        name: '75002',
         values: [ { x: 0, y: 20 }, { x: 1, y: 30 }, { x: 2, y: 10 }, { x: 3, y: 5 }, { x: 4, y: 8 }, { x: 5, y: 15 }, { x: 6, y: 10 } ]
       },
       {
-        name: 'series2',
+        name: '75000',
         values : [ { x: 0, y: 8 }, { x: 1, y: 5 }, { x: 2, y: 20 }, { x: 3, y: 12 }, { x: 4, y: 4 }, { x: 5, y: 6 }, { x: 6, y: 2 } ]
       },
       {
@@ -29,6 +29,23 @@ var Demos = React.createClass({
       } 
     ];
 
+    var dataPointObjects = datagen.generateArrayOfDataPointObjects(3);
+    var binaryData = [
+      {
+        name: dataPointObjects[0].datapointId,
+        values: dataPointObjects
+      },
+      {
+        name: dataPointObjects[1].datapointId,
+        values: dataPointObjects
+      },
+      {
+        name: dataPointObjects[2].datapointId,
+        values: dataPointObjects
+      }
+    ];
+
+    console.log('dataPointObjects', dataPointObjects);
 
     return (
       <div className="container">
@@ -41,10 +58,12 @@ var Demos = React.createClass({
               legend={true}
               data={binaryData}
               width={500}
-              height={300}
+              height={600}
               title="Line Chart"
               yAxisLabel="Altitude"
               xAxisLabel="Elapsed Time (sec)"
+              xAccessor={ (point) => point.timeStamp }
+              yAccessor={ (point) => point.value }
             />
           </div>
           <div className="col-md-6">
