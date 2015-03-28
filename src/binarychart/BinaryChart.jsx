@@ -7,7 +7,6 @@ var Chart = common.Chart;
 var XAxis = common.XAxis;
 var YAxis = common.YAxis;
 var utils = require('../utils');
-var immstruct = require('immstruct');
 var StackedChart = require('./StackedChart');
 var mixins = require('../mixins');
 var CartesianChartPropsMixin = mixins.CartesianChartPropsMixin;
@@ -47,8 +46,6 @@ module.exports = React.createClass({
     var numberItems = props.data.length;
 
     var chartHeight = props.height / numberItems;
-
-    var structure = immstruct('lineChart', { voronoi: {}, voronoiSeries: {}});
 
     var interpolationType = props.interpolationType || (props.interpolate ? 'cardinal' : 'linear');
 
@@ -99,7 +96,6 @@ module.exports = React.createClass({
                   strokeWidth={props.strokeWidth}
                 />
                 <StackedChart
-                  structure={structure}
                   xScale={scales.xScale}
                   yScale={yScale}
                   seriesName={series.name}
