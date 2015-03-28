@@ -51,9 +51,6 @@ module.exports = React.createClass({
     var xAccessor = props.xAccessor,
         yAccessor = props.yAccessor;
 
-    console.log('sct', props.stackedChartTop);
-    console.log('sch', props.stackedChartHeight);
-
     var yScale = d3.scale.ordinal()
       .domain([true, false])
       .rangeBands([0, props.stackedChartHeight/2]);
@@ -92,7 +89,6 @@ module.exports = React.createClass({
         nextPoint = props.data[i + 1];
         prevPoint = props.data[i - 1]
       }
-      console.log('nextPoint', nextPoint);
 
       if (this._isDate(point, xAccessor)) {
         x1 = props.xScale(xAccessor(point).getTime());
@@ -134,7 +130,7 @@ module.exports = React.createClass({
       };
 
       return (
-        <g>
+        <g key={i}>
         <line
           stroke={props.fill}
           strokeWidth="2"
@@ -161,10 +157,16 @@ module.exports = React.createClass({
       <g>
         {lines}
         <text
+          strokeWidth='0.01'
+          textAnchor='middle'
+          dy="0.25em"
           x={-25}
           y={props.stackedChartHeight - (props.stackedChartHeight/props.squareWaveOffsetDivisor)}
         >Off</text>
         <text
+          dy="0.25em"
+          strokeWidth='0.01'
+          textAnchor='middle'
           x={-25}
           y={props.stackedChartHeight/props.squareWaveOffsetDivisor}
         >On</text>
