@@ -79,7 +79,7 @@ module.exports = React.createClass({
           return (
             <svg
               key={idx}
-              y={idx * (props.stackedChartHeight + 40)}
+              y={idx * (props.stackedChartHeight + 60)}
               width={props.width}
               height={ props.stackedChartInnerHeight }
             >

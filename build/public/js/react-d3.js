@@ -21837,7 +21837,7 @@ module.exports = React.createClass({displayName: "exports",
           return (
             React.createElement("svg", {
               key: idx, 
-              y: idx * (props.stackedChartHeight + 40), 
+              y: idx * (props.stackedChartHeight + 60), 
               width: props.width, 
               height:  props.stackedChartInnerHeight
             }, 
