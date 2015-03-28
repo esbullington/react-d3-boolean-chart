@@ -2,6 +2,7 @@
 
 var React = require('react');
 var d3 = require('d3');
+var _ = require('lodash');
 var hljs = require("highlight.js");
 var datagen = require('../../utils/datagen');
 var rd3 = require('../../src');
@@ -14,23 +15,20 @@ var Demos = React.createClass({
 
   render: function() {
 
-    var dataPointObjects = datagen.generateArrayOfDataPointObjects(5);
-    var binaryData = [
-      {
-        name: dataPointObjects[0].datapointId,
-        values: dataPointObjects
-      },
-      {
-        name: dataPointObjects[1].datapointId,
-        values: dataPointObjects
-      },
-      {
-        name: dataPointObjects[2].datapointId,
-        values: dataPointObjects
-      }
-    ];
+    var dataPointObjects = datagen.generateArrayOfDataPointObjects(20);
 
-    console.log('dataPointObjects', dataPointObjects);
+    var result = _.groupBy(dataPointObjects, 'datapointId');
+
+    console.log('result', result);
+
+    var binaryData = Object.keys(result).map( (datapointId, idx) => {
+      return {
+        name: datapointId,
+        values: result[datapointId]
+      }
+    });
+
+    console.log('binaryData', binaryData);
 
     return (
       <div className="container">
@@ -44,8 +42,9 @@ var Demos = React.createClass({
               data={binaryData}
               width={500}
               height={600}
-              title="Line Chart"
+              title="Binary Chart"
               xAxisLabel="Time (sec)"
+              xAxisTickCount={4}
               xAccessor={ (point) => point.timeStamp }
               yAccessor={ (point) => point.value }
             />
@@ -56,13 +55,13 @@ var Demos = React.createClass({
               {
 `var binaryData = [
   {
-    name: "series1",
-    values: [ { x: 0, y: 20 }, ..., { x: 24, y: 10 } ]
+    name: "75000",
+    values: [ {datapointId: 75000, id: "id-14", stationId: 100001, timeStamp: Sat Mar 28 2015 10:17:44 GMT-0400 (EDT), value: false }, ... ]
   },
   ....
   {
-    name: "series2",
-    values: [ { x: 70, y: 82 }, ..., { x: 76, y: 82 } ]
+    name: "75005",
+    values: [ { datapointId: 75005, id: "id-8", stationId: 100001, timeStamp: Sat Mar 28 2015 10:17:27 GMT-0400 (EDT), value: true }, ... ]
   }
 ];`
               }
@@ -75,10 +74,12 @@ var Demos = React.createClass({
   legend={true}
   data={binaryData}
   width={500}
-  height={300}
-  title="Line Chart"
-  yAxisLabel="Altitude"
-  xAxisLabel="Elapsed Time (sec)"
+  height={600}
+  title="Binary Chart"
+  xAxisLabel="Time (sec)"
+  xAxisTickCount={4}
+  xAccessor={ (point) => point.timeStamp }
+  yAccessor={ (point) => point.value }
 />`
               }
               </code>
