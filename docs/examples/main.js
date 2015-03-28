@@ -6,7 +6,7 @@ var _ = require('lodash');
 var hljs = require("highlight.js");
 var datagen = require('../../utils/datagen');
 var rd3 = require('../../src');
-var BinaryChart = rd3.BinaryChart;
+var BooleanChart = rd3.BooleanChart;
 
 hljs.initHighlightingOnLoad();
 
@@ -21,28 +21,28 @@ var Demos = React.createClass({
 
     console.log('result', result);
 
-    var binaryData = Object.keys(result).map( (datapointId, idx) => {
+    var booleanData = Object.keys(result).map( (datapointId, idx) => {
       return {
         name: datapointId,
         values: result[datapointId]
       }
     });
 
-    console.log('binaryData', binaryData);
+    console.log('booleanData', booleanData);
 
     return (
       <div className="container">
         <div className="row">
-          <h3 className="page-header">binary-chart</h3>
+          <h3 className="page-header">boolean-chart</h3>
         </div>
         <div className="row">
           <div className="col-md-6">
-            <BinaryChart
+            <BooleanChart
               legend={true}
-              data={binaryData}
+              data={booleanData}
               width={500}
               height={600}
-              title="Binary Chart"
+              title="Boolean Chart"
               xAxisLabel="Time (sec)"
               xAxisTickCount={4}
               xAccessor={ (point) => point.timeStamp }
@@ -53,7 +53,7 @@ var Demos = React.createClass({
             <pre ref='block'>
               <code className='js'>
               {
-`var binaryData = [
+`var booleanData = [
   {
     name: "75000",
     values: [ {datapointId: 75000, id: "id-14", stationId: 100001, timeStamp: Sat Mar 28 2015 10:17:44 GMT-0400 (EDT), value: false }, ... ]
@@ -70,12 +70,12 @@ var Demos = React.createClass({
             <pre ref='block'>
               <code className='html'>
               {
-`<BinaryChart
+`<BooleanChart
   legend={true}
-  data={binaryData}
+  data={booleanData}
   width={500}
   height={600}
-  title="Binary Chart"
+  title="Boolean Chart"
   xAxisLabel="Time (sec)"
   xAxisTickCount={4}
   xAccessor={ (point) => point.timeStamp }

@@ -1,1 +1,1 @@
-exports.BinaryChart = require('./binarychart').BinaryChart;
+exports.BooleanChart = require('./booleanchart').BooleanChart;

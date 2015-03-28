@@ -1,2 +1,0 @@
-
-exports.BinaryChart = require('./BinaryChart');

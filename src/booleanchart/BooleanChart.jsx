@@ -18,6 +18,8 @@ module.exports = React.createClass({
 
   propTypes: {
     margins: React.PropTypes.object,
+    stackedChartMargins: React.PropTypes.object,
+    booleanLabels: React.PropTypes.array,
     pointRadius: React.PropTypes.number,
     colors: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool
@@ -27,7 +29,8 @@ module.exports = React.createClass({
     return {
       stackedChartHeight: 120,
       margins: {top: 10, right: 20, bottom: 40, left: 45},
-      className: 'rd3-binarychart',
+      stackedChartMargins: {top: 10, right: 20, bottom: 40, left: 45},
+      className: 'rd3-booleanchart',
       pointRadius: 3,
       interpolate: false,
       interpolationType: null,
@@ -49,7 +52,7 @@ module.exports = React.createClass({
 
     var interpolationType = props.interpolationType || (props.interpolate ? 'cardinal' : 'linear');
 
-    // Calculate inner chart dimensions
+    // Calculate inner stacked chart dimensions
     var innerWidth, innerHeight;
 
     innerWidth = props.width - props.margins.left - props.margins.right;

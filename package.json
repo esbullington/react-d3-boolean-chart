@@ -1,9 +1,9 @@
 {
-  "name": "react-d3-binary",
+  "name": "react-d3-boolean-chart",
   "version": "0.0.1",
-  "description": "React binary chart using d3",
+  "description": "React boolean chart using d3",
   "author": "Eric S. Bullington",
-  "homepage": "http://esbullington.github.io/react-binary-website/",
+  "homepage": "http://esbullington.github.io/react-d3-boolean-chart/",
   "keywords": [
     "d3",
     "react",
@@ -73,6 +73,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esbullington/react-d3.git"
+    "url": "https://github.com/esbullington/react-d3-boolean-chart.git"
   }
 }
