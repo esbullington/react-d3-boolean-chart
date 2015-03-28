@@ -8,7 +8,7 @@ Provides a chart to reflect the state of a boolean variable over time.  Stacked 
 
 ### Usage
 
-Please see online [example documentation](https://github.com/esbullington/react-d3/build/public/) for usage.
+Please see online [example documentation](https://github.com/esbullington/react-d3-boolean-chart/build/public/) for usage.
 
 ### Sponsorship
 
