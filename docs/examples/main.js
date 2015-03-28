@@ -14,22 +14,7 @@ var Demos = React.createClass({
 
   render: function() {
 
-    var binaryData = [
-      { 
-        name: '75002',
-        values: [ { x: 0, y: 20 }, { x: 1, y: 30 }, { x: 2, y: 10 }, { x: 3, y: 5 }, { x: 4, y: 8 }, { x: 5, y: 15 }, { x: 6, y: 10 } ]
-      },
-      {
-        name: '75000',
-        values : [ { x: 0, y: 8 }, { x: 1, y: 5 }, { x: 2, y: 20 }, { x: 3, y: 12 }, { x: 4, y: 4 }, { x: 5, y: 6 }, { x: 6, y: 2 } ]
-      },
-      {
-        name: 'series3',
-        values: [ { x: 0, y: 0 }, { x: 1, y: 5 }, { x: 2, y: 8 }, { x: 3, y: 2 }, { x: 4, y: 6 }, { x: 5, y: 4 }, { x: 6, y: 2 } ]
-      } 
-    ];
-
-    var dataPointObjects = datagen.generateArrayOfDataPointObjects(3);
+    var dataPointObjects = datagen.generateArrayOfDataPointObjects(5);
     var binaryData = [
       {
         name: dataPointObjects[0].datapointId,
@@ -60,8 +45,7 @@ var Demos = React.createClass({
               width={500}
               height={600}
               title="Line Chart"
-              yAxisLabel="Altitude"
-              xAxisLabel="Elapsed Time (sec)"
+              xAxisLabel="Time (sec)"
               xAccessor={ (point) => point.timeStamp }
               yAccessor={ (point) => point.value }
             />
