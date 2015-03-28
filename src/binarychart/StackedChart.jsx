@@ -120,40 +120,18 @@ module.exports = React.createClass({
         prevy1 = props.stackedChartHeight - squareWaveOffset;
         prevy2 = props.stackedChartHeight - squareWaveOffset;
       }
-
-      // var linePoints = {
-      //   x1: x2,
-      //   x2: x2,
-      //   y1: !trueToFalse ?
-      //         y1 :
-      //         squareWaveOffset + y1
-      //       ,
-      //   y2: !trueToFalse ?
-      //         props.stackedChartHeight - y2 - y1 + squareWaveOffset :
-      //         y2
-      // }
-      //
  
-      var trueToFalse = prevPoint.value && !point.value ? true : false;
-
       var isNotSameValue = point.value !== nextPoint.value;
 
-      var linePoints;
-      if (prevPoint.value) {
-        linePoints = {
-          x1: x2,
-          x2: x2,
-          y1: y2,
-          y2: prevy1
-        }
-      } else {
-        linePoints = {
-          x1: x2,
-          x2: x2,
-          y1: y2,
-          y2: prevy1
-        }
-      }
+      var linePoints = {
+        x1: x2,
+        x2: x2,
+        // y1 and y1 are always equal to the difference between 
+        // the height of the stacked chart less the squareWaveOffset
+        // and the squareWaveOffset itself
+        y1: props.stackedChartHeight - squareWaveOffset,
+        y2: squareWaveOffset
+      };
 
       return (
         <g>
@@ -167,7 +145,7 @@ module.exports = React.createClass({
           y2={y2}
         />
         {isNotSameValue ? <line
-          stroke="black"
+          stroke={props.fill}
           strokeWidth="2"
           x1={linePoints.x1}
           x2={linePoints.x2}
@@ -182,6 +160,14 @@ module.exports = React.createClass({
     return (
       <g>
         {lines}
+        <text
+          x={-25}
+          y={props.stackedChartHeight - (props.stackedChartHeight/props.squareWaveOffsetDivisor)}
+        >Off</text>
+        <text
+          x={-25}
+          y={props.stackedChartHeight/props.squareWaveOffsetDivisor}
+        >On</text>
       </g>
     );
   }
