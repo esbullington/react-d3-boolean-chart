@@ -100,7 +100,7 @@ module.exports = React.createClass({
 
       var squareWaveOffset = props.stackedChartHeight/props.squareWaveOffsetDivisor;
 
-      if (point.value) {
+      if (yAccessor(point)) {
         y1 = squareWaveOffset;
         y2 = squareWaveOffset;
       } else {
@@ -109,7 +109,7 @@ module.exports = React.createClass({
       }
 
       var prevy2, prevy1;
-      if (prevPoint.value) {
+      if (yAccessor(prevPoint)) {
         prevy1 = squareWaveOffset;
         prevy2 = squareWaveOffset;
       } else {
@@ -117,7 +117,7 @@ module.exports = React.createClass({
         prevy2 = props.stackedChartHeight - squareWaveOffset;
       }
  
-      var isNotSameValue = point.value !== nextPoint.value;
+      var isNotSameValue = yAccessor(point) !== yAccessor(nextPoint);
 
       var linePoints = {
         x1: x2,
