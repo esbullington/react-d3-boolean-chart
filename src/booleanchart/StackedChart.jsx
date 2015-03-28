@@ -157,6 +157,9 @@ module.exports = React.createClass({
 
     return (
       <g>
+        <text
+          fontSize="120%"
+        >{props.seriesName}</text>
         {lines}
         <text
           strokeWidth='0.01'

@@ -36,7 +36,7 @@ var Demos = React.createClass({
             <BooleanChart
               legend={true}
               data={booleanData}
-              width={500}
+              width={550}
               height={600}
               title="Boolean Chart"
               xAxisLabel="Time (sec)"
@@ -69,7 +69,7 @@ var Demos = React.createClass({
 `<BooleanChart
   legend={true}
   data={booleanData}
-  width={500}
+  width={550}
   height={600}
   title="Boolean Chart"
   xAxisLabel="Time (sec)"

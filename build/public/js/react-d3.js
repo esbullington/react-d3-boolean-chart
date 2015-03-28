@@ -37,7 +37,7 @@ var Demos = React.createClass({displayName: "Demos",
             React.createElement(BooleanChart, {
               legend: true, 
               data: booleanData, 
-              width: 500, 
+              width: 550, 
               height: 600, 
               title: "Boolean Chart", 
               xAxisLabel: "Time (sec)", 
@@ -67,7 +67,7 @@ var Demos = React.createClass({displayName: "Demos",
             React.createElement("pre", {ref: "block"}, 
               React.createElement("code", {className: "html"}, 
               
-("<BooleanChart\n  legend={true}\n  data={booleanData}\n  width={500}\n  height={600}\n  title=\"Boolean Chart\"\n  xAxisLabel=\"Time (sec)\"\n  xAxisTickCount={4}\n  xAccessor={ (point) => point.timeStamp }\n  yAccessor={ (point) => point.value }\n/>"
+("<BooleanChart\n  legend={true}\n  data={booleanData}\n  width={550}\n  height={600}\n  title=\"Boolean Chart\"\n  xAxisLabel=\"Time (sec)\"\n  xAxisTickCount={4}\n  xAccessor={ (point) => point.timeStamp }\n  yAccessor={ (point) => point.value }\n/>"
 
 
 
@@ -21778,7 +21778,6 @@ module.exports = React.createClass({displayName: "exports",
     margins: React.PropTypes.object,
     stackedChartMargins: React.PropTypes.object,
     booleanLabels: React.PropTypes.object,
-    pointRadius: React.PropTypes.number,
     colors: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool
   },
@@ -21787,12 +21786,10 @@ module.exports = React.createClass({displayName: "exports",
     return {
       stackedChartHeight: 120,
       margins: {top: 10, right: 20, bottom: 40, left: 45},
-      stackedChartMargins: {top: 10, right: 20, bottom: 40, left: 45},
+      stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
-      pointRadius: 3,
       interpolate: false,
-      interpolationType: null,
-      displayDataPoints: true
+      interpolationType: null
     };
   },
 
@@ -21812,9 +21809,11 @@ module.exports = React.createClass({displayName: "exports",
 
     // Calculate inner stacked chart dimensions
     var innerWidth, innerHeight;
-
     innerWidth = props.width - props.margins.left - props.margins.right;
-    innerHeight = props.stackedChartHeight - props.margins.top - props.margins.bottom;
+    innerHeight = props.height - props.margins.top - props.margins.bottom;
+
+    var stackedChartInnerHeight;
+    stackedChartInnerHeight = props.stackedChartHeight - props.stackedChartMargins.top - props.stackedChartMargins.bottom;
 
     if (props.legend) {
       innerWidth = innerWidth - props.legendOffset;
@@ -21828,19 +21827,19 @@ module.exports = React.createClass({displayName: "exports",
 
     var scales = utils.calculateScales(innerWidth, innerHeight, xValues, yValues);
 
-    var trans = ("translate(" +  props.margins.left + "," +  props.margins.top + ")");
+    var trans = ("translate(" +  props.margins.left + "," +  props.stackedChartMargins.top + ")");
 
     var yScale = d3.scale.ordinal()
       .domain([true, false])
-      .rangeBands([0, props.stackedChartHeight/2]);
+      .rangeBands([0, props.stackedChartInnerHeight/2]);
 
     var charts = props.data.map( function(series, idx)  {
           return (
             React.createElement("svg", {
               key: idx, 
-              y: idx * (props.stackedChartHeight + 110), 
+              y: idx * (props.stackedChartHeight + 40), 
               width: props.width, 
-              height:  props.stackedChartHeight
+              height:  props.stackedChartInnerHeight
             }, 
               React.createElement("g", {transform: trans, className: props.className}, 
                 React.createElement(XAxis, {
@@ -21852,7 +21851,7 @@ module.exports = React.createClass({displayName: "exports",
                   xOrient: props.xOrient, 
                   xScale: scales.xScale, 
                   width: innerWidth, 
-                  height: innerHeight, 
+                  height: stackedChartInnerHeight, 
                   stroke: props.axesColor, 
                   strokeWidth: props.strokeWidth}
                 ), 
@@ -21862,15 +21861,13 @@ module.exports = React.createClass({displayName: "exports",
                   seriesName: series.name, 
                   data: series.values, 
                   fill: props.colors(idx), 
-                  pointRadius: props.pointRadius, 
                   key: series.name, 
                   xAccessor: props.xAccessor, 
                   yAccessor: props.yAccessor, 
                   interpolationType: interpolationType, 
-                  displayDataPoints: props.displayDataPoints, 
                   stackedChartIndex: idx, 
-                  stackedChartTop: idx * (innerHeight), 
-                  stackedChartHeight: innerHeight}
+                  stackedChartTop: idx * (stackedChartInnerHeight), 
+                  stackedChartHeight: stackedChartInnerHeight}
                 )
               )
             )
@@ -22062,6 +22059,9 @@ module.exports = React.createClass({displayName: "exports",
 
     return (
       React.createElement("g", null, 
+        React.createElement("text", {
+          fontSize: "120%"
+        }, props.seriesName), 
         lines, 
         React.createElement("text", {
           strokeWidth: "0.01", 
