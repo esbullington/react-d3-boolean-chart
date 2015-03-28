@@ -19,7 +19,7 @@ module.exports = React.createClass({
   propTypes: {
     margins: React.PropTypes.object,
     stackedChartMargins: React.PropTypes.object,
-    booleanLabels: React.PropTypes.array,
+    booleanLabels: React.PropTypes.object,
     pointRadius: React.PropTypes.number,
     colors: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool
