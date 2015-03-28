@@ -11,7 +11,8 @@ module.exports = React.createClass({
     fill: React.PropTypes.string,
     xAccessor: React.PropTypes.func,
     yAccessor: React.PropTypes.func,
-    displayDataPoints: React.PropTypes.bool
+    displayDataPoints: React.PropTypes.bool,
+    booleanLabels: React.PropTypes.object
   },
 
   getDefaultProps() {
@@ -22,7 +23,8 @@ module.exports = React.createClass({
       xAccessor: (d) => d.x,
       yAccessor: (d) => d.y,
       displayDataPoints: true,
-      squareWaveOffsetDivisor: 4
+      squareWaveOffsetDivisor: 4,
+      booleanLabels: {on: 'on', off: 'off'}
     };
   },
 
@@ -162,14 +164,14 @@ module.exports = React.createClass({
           dy="0.25em"
           x={-25}
           y={props.stackedChartHeight - (props.stackedChartHeight/props.squareWaveOffsetDivisor)}
-        >Off</text>
+        >{props.booleanLabels.off}</text>
         <text
           dy="0.25em"
           strokeWidth='0.01'
           textAnchor='middle'
           x={-25}
           y={props.stackedChartHeight/props.squareWaveOffsetDivisor}
-        >On</text>
+        >{props.booleanLabels.on}</text>
       </g>
     );
   }
