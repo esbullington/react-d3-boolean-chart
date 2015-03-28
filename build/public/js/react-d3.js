@@ -6,8 +6,8 @@ var d3 = (window.d3);
 var _ = require('lodash');
 var hljs = require("highlight.js");
 var datagen = require('../../utils/datagen');
-var rd3 = require('../../src');
-var BooleanChart = rd3.BooleanChart;
+var booleanchart = require('../../src');
+var BooleanChart = booleanchart.BooleanChart;
 
 hljs.initHighlightingOnLoad();
 
@@ -20,16 +20,12 @@ var Demos = React.createClass({displayName: "Demos",
 
     var result = _.groupBy(dataPointObjects, 'datapointId');
 
-    console.log('result', result);
-
     var booleanData = Object.keys(result).map( function(datapointId, idx)  {
       return {
         name: datapointId,
         values: result[datapointId]
       }
     });
-
-    console.log('booleanData', booleanData);
 
     return (
       React.createElement("div", {className: "container"}, 
