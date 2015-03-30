@@ -14,6 +14,8 @@ var CartesianChartPropsMixin = mixins.CartesianChartPropsMixin;
 
 module.exports = React.createClass({
 
+  displayName: 'BooleanChart',
+
   mixins: [ CartesianChartPropsMixin ],
 
   propTypes: {

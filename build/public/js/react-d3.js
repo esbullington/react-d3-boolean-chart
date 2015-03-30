@@ -21770,7 +21770,9 @@ var mixins = require('../mixins');
 var CartesianChartPropsMixin = mixins.CartesianChartPropsMixin;
 
 
-module.exports = React.createClass({displayName: "exports",
+module.exports = React.createClass({
+
+  displayName: 'BooleanChart',
 
   mixins: [ CartesianChartPropsMixin ],
 
@@ -21916,7 +21918,9 @@ module.exports = React.createClass({displayName: "exports",
 var React = (window.React);
 var d3 = (window.d3);
 
-module.exports = React.createClass({displayName: "exports",
+module.exports = React.createClass({
+
+  displayName: 'StackedChart',
 
   propTypes: {
     data: React.PropTypes.array,

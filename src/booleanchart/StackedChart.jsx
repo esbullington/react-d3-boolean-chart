@@ -5,6 +5,8 @@ var d3 = require('d3');
 
 module.exports = React.createClass({
 
+  displayName: 'StackedChart',
+
   propTypes: {
     data: React.PropTypes.array,
     interpolationType: React.PropTypes.string,
