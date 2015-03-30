@@ -21779,9 +21779,9 @@ module.exports = React.createClass({
   propTypes: {
     margins: React.PropTypes.object,
     stackedChartMargins: React.PropTypes.object,
-    booleanLabels: React.PropTypes.object,
     colors: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool,
+    booleanLabels: React.PropTypes.object,
     stackedChartLabel: React.PropTypes.bool
   },
 
@@ -21791,9 +21791,8 @@ module.exports = React.createClass({
       margins: {top: 10, right: 20, bottom: 40, left: 45},
       stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
-      interpolate: false,
-      interpolationType: null,
-      stackedChartLabel: false
+      stackedChartLabel: false,
+      booleanLabels: {on: 'on', off: 'off'}
     };
   },
 
@@ -21808,8 +21807,6 @@ module.exports = React.createClass({
     var numberItems = props.data.length;
 
     var chartHeight = props.height / numberItems;
-
-    var interpolationType = props.interpolationType || (props.interpolate ? 'cardinal' : 'linear');
 
     // Calculate inner stacked chart dimensions
     var innerWidth, innerHeight;
@@ -21841,7 +21838,7 @@ module.exports = React.createClass({
           return (
             React.createElement("svg", {
               key: idx, 
-              y: idx * (props.stackedChartHeight + 60), 
+              y: idx * (props.stackedChartHeight), 
               width: props.width, 
               height:  props.stackedChartInnerHeight
             }, 
@@ -21876,7 +21873,7 @@ module.exports = React.createClass({
                   key: series.name, 
                   xAccessor: props.xAccessor, 
                   yAccessor: props.yAccessor, 
-                  interpolationType: interpolationType, 
+                  booleanLabels: series.booleanLabels ? series.yAxisLabels : props.booleanLabels, 
                   stackedChartIndex: idx, 
                   stackedChartTop: idx * (stackedChartInnerHeight), 
                   stackedChartHeight: stackedChartInnerHeight, 
@@ -21942,7 +21939,6 @@ module.exports = React.createClass({
       yAccessor: function(d)  {return d.y;},
       displayDataPoints: true,
       squareWaveOffsetDivisor: 4,
-      booleanLabels: {on: 'on', off: 'off'}
     };
   },
 
