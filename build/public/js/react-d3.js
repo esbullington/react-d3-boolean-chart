@@ -21779,7 +21779,8 @@ module.exports = React.createClass({displayName: "exports",
     stackedChartMargins: React.PropTypes.object,
     booleanLabels: React.PropTypes.object,
     colors: React.PropTypes.func,
-    displayDataPoints: React.PropTypes.bool
+    displayDataPoints: React.PropTypes.bool,
+    stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps:function() {
@@ -21789,7 +21790,8 @@ module.exports = React.createClass({displayName: "exports",
       stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
       interpolate: false,
-      interpolationType: null
+      interpolationType: null,
+      stackedChartLabel: false
     };
   },
 
@@ -21875,7 +21877,8 @@ module.exports = React.createClass({displayName: "exports",
                   interpolationType: interpolationType, 
                   stackedChartIndex: idx, 
                   stackedChartTop: idx * (stackedChartInnerHeight), 
-                  stackedChartHeight: stackedChartInnerHeight}
+                  stackedChartHeight: stackedChartInnerHeight, 
+                  stackedChartLabel: props.stackedChartLabel}
                 )
               )
             )
@@ -21922,7 +21925,8 @@ module.exports = React.createClass({displayName: "exports",
     xAccessor: React.PropTypes.func,
     yAccessor: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool,
-    booleanLabels: React.PropTypes.object
+    booleanLabels: React.PropTypes.object,
+    stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps:function() {
@@ -22067,9 +22071,12 @@ module.exports = React.createClass({displayName: "exports",
 
     return (
       React.createElement("g", null, 
-        React.createElement("text", {
+         props.stackedChartLabel ? 
+          React.createElement("text", {
           fontSize: "120%"
-        }, props.seriesName), 
+          }, props.seriesName)
+        : React.createElement("text", null), 
+        
         lines, 
         React.createElement("text", {
           strokeWidth: "0.01", 

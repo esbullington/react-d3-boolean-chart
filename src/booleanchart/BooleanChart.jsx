@@ -21,7 +21,8 @@ module.exports = React.createClass({
     stackedChartMargins: React.PropTypes.object,
     booleanLabels: React.PropTypes.object,
     colors: React.PropTypes.func,
-    displayDataPoints: React.PropTypes.bool
+    displayDataPoints: React.PropTypes.bool,
+    stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps() {
@@ -31,7 +32,8 @@ module.exports = React.createClass({
       stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
       interpolate: false,
-      interpolationType: null
+      interpolationType: null,
+      stackedChartLabel: false
     };
   },
 
@@ -118,6 +120,7 @@ module.exports = React.createClass({
                   stackedChartIndex={idx}
                   stackedChartTop={idx * (stackedChartInnerHeight)}
                   stackedChartHeight={stackedChartInnerHeight}
+                  stackedChartLabel={props.stackedChartLabel}
                 />
               </g>
             </svg>

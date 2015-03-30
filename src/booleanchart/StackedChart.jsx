@@ -12,7 +12,8 @@ module.exports = React.createClass({
     xAccessor: React.PropTypes.func,
     yAccessor: React.PropTypes.func,
     displayDataPoints: React.PropTypes.bool,
-    booleanLabels: React.PropTypes.object
+    booleanLabels: React.PropTypes.object,
+    stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps() {
@@ -157,9 +158,12 @@ module.exports = React.createClass({
 
     return (
       <g>
-        <text
+        { props.stackedChartLabel ? 
+          <text
           fontSize="120%"
-        >{props.seriesName}</text>
+          >{props.seriesName}</text>
+        : <text/>
+        }
         {lines}
         <text
           strokeWidth='0.01'
