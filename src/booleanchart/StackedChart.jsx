@@ -27,7 +27,6 @@ module.exports = React.createClass({
       yAccessor: (d) => d.y,
       displayDataPoints: true,
       squareWaveOffsetDivisor: 4,
-      booleanLabels: {on: 'on', off: 'off'}
     };
   },
 
