@@ -152,7 +152,6 @@ gulp.task('build', ['minified', 'docs']);
 
 gulp.task('release', ['copymisc', 'minified'], function(cb) {
 
-  console.log('building release');
   var fs  = require("fs");
   var Handlebars = require('handlebars');
   var path = require('path');
