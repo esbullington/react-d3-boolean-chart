@@ -8,8 +8,14 @@ Provides a chart to reflect the state of a boolean variable over time.  Stacked 
 
 ### Usage
 
-Please see online [example documentation](https://github.com/esbullington/react-d3-boolean-chart/build/public/) for usage.
+`var BooleanChart = require('react-d3'boolean'chart').BooleanChart`
+
+Please see online [example documentation](https://github.com/esbullington/react-d3-boolean-chart/build/public/) for usage example.
 
 ### Sponsorship
 
 This chart was made possible through the sponsorship of the [engineering firm](http://www.jbysewski.de/) of Jakob Bysewski, Saarlouis, Germany.
+
+### License
+
+MIT
