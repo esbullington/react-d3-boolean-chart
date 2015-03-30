@@ -84,7 +84,10 @@ module.exports = React.createClass({
               height={ props.stackedChartInnerHeight }
             >
               <g transform={trans} className={props.className}>
-                <XAxis
+              { 
+                // If it's the last series, we display the x axis
+                // otherwise, it's a dotted line
+                idx === props.data.length - 1 ? <XAxis
                   xAxisClassName='rd3-linechart-xaxis'
                   tickFormatting={props.xAxisFormatter}
                   xAxisLabel={props.xAxisLabel}
@@ -95,8 +98,13 @@ module.exports = React.createClass({
                   width={innerWidth}
                   height={stackedChartInnerHeight}
                   stroke={props.axesColor}
-                  strokeWidth={props.strokeWidth}
-                />
+                  strokeWidth={props.strokeWidth}/>
+                : <line 
+                    strokeWidth="1"
+                    stroke="black"
+                    strokeDasharray="5, 4"
+                    x1="0" y1={stackedChartInnerHeight} x2={innerWidth} y2={stackedChartInnerHeight} />
+              }
                 <StackedChart
                   xScale={scales.xScale}
                   yScale={yScale}

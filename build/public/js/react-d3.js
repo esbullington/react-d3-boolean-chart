@@ -97,7 +97,7 @@ React.render(
 
 
 
-},{"../../src":"/home/eric/repos/binary-chart/src/index.js","../../utils/datagen":"/home/eric/repos/binary-chart/utils/datagen.js","highlight.js":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/index.js","lodash":"/home/eric/repos/binary-chart/node_modules/lodash/index.js"}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/highlight.js":[function(require,module,exports){
+},{"../../src":"/home/eric/repos/boolean-chart/src/index.js","../../utils/datagen":"/home/eric/repos/boolean-chart/utils/datagen.js","highlight.js":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/index.js","lodash":"/home/eric/repos/boolean-chart/node_modules/lodash/index.js"}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/highlight.js":[function(require,module,exports){
 /*
 Syntax highlighting with language autodetection.
 https://highlightjs.org/
@@ -838,7 +838,7 @@ https://highlightjs.org/
   return hljs;
 }));
 
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/index.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/index.js":[function(require,module,exports){
 var hljs = require('./highlight');
 
 hljs.registerLanguage('1c', require('./languages/1c'));
@@ -955,7 +955,7 @@ hljs.registerLanguage('x86asm', require('./languages/x86asm'));
 hljs.registerLanguage('xl', require('./languages/xl'));
 
 module.exports = hljs;
-},{"./highlight":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/highlight.js","./languages/1c":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/1c.js","./languages/actionscript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/actionscript.js","./languages/apache":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/apache.js","./languages/applescript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/applescript.js","./languages/asciidoc":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/asciidoc.js","./languages/aspectj":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/aspectj.js","./languages/autohotkey":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/autohotkey.js","./languages/avrasm":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/avrasm.js","./languages/axapta":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/axapta.js","./languages/bash":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/bash.js","./languages/brainfuck":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/brainfuck.js","./languages/capnproto":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/capnproto.js","./languages/clojure":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/clojure.js","./languages/clojure-repl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/clojure-repl.js","./languages/cmake":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cmake.js","./languages/coffeescript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/coffeescript.js","./languages/cpp":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cpp.js","./languages/cs":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cs.js","./languages/css":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/css.js","./languages/d":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/d.js","./languages/dart":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dart.js","./languages/delphi":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/delphi.js","./languages/diff":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/diff.js","./languages/django":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/django.js","./languages/dos":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dos.js","./languages/dust":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dust.js","./languages/elixir":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/elixir.js","./languages/erb":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erb.js","./languages/erlang":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erlang.js","./languages/erlang-repl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erlang-repl.js","./languages/fix":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/fix.js","./languages/fsharp":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/fsharp.js","./languages/gcode":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gcode.js","./languages/gherkin":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gherkin.js","./languages/glsl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/glsl.js","./languages/go":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/go.js","./languages/gradle":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gradle.js","./languages/groovy":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/groovy.js","./languages/haml":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haml.js","./languages/handlebars":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/handlebars.js","./languages/haskell":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haskell.js","./languages/haxe":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haxe.js","./languages/http":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/http.js","./languages/ini":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ini.js","./languages/java":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/java.js","./languages/javascript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/javascript.js","./languages/json":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/json.js","./languages/lasso":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lasso.js","./languages/less":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/less.js","./languages/lisp":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lisp.js","./languages/livecodeserver":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/livecodeserver.js","./languages/livescript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/livescript.js","./languages/lua":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lua.js","./languages/makefile":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/makefile.js","./languages/markdown":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/markdown.js","./languages/mathematica":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mathematica.js","./languages/matlab":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/matlab.js","./languages/mel":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mel.js","./languages/mercury":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mercury.js","./languages/mizar":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mizar.js","./languages/monkey":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/monkey.js","./languages/nginx":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nginx.js","./languages/nimrod":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nimrod.js","./languages/nix":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nix.js","./languages/nsis":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nsis.js","./languages/objectivec":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/objectivec.js","./languages/ocaml":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ocaml.js","./languages/oxygene":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/oxygene.js","./languages/parser3":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/parser3.js","./languages/perl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/perl.js","./languages/php":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/php.js","./languages/powershell":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/powershell.js","./languages/processing":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/processing.js","./languages/profile":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/profile.js","./languages/protobuf":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/protobuf.js","./languages/puppet":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/puppet.js","./languages/python":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/python.js","./languages/q":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/q.js","./languages/r":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/r.js","./languages/rib":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rib.js","./languages/roboconf":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/roboconf.js","./languages/rsl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rsl.js","./languages/ruby":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ruby.js","./languages/ruleslanguage":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ruleslanguage.js","./languages/rust":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rust.js","./languages/scala":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scala.js","./languages/scheme":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scheme.js","./languages/scilab":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scilab.js","./languages/scss":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scss.js","./languages/smali":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/smali.js","./languages/smalltalk":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/smalltalk.js","./languages/sml":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/sml.js","./languages/sql":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/sql.js","./languages/stata":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/stata.js","./languages/step21":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/step21.js","./languages/stylus":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/stylus.js","./languages/swift":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/swift.js","./languages/tcl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/tcl.js","./languages/tex":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/tex.js","./languages/thrift":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/thrift.js","./languages/twig":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/twig.js","./languages/typescript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/typescript.js","./languages/vala":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vala.js","./languages/vbnet":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbnet.js","./languages/vbscript":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbscript.js","./languages/vbscript-html":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbscript-html.js","./languages/verilog":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/verilog.js","./languages/vhdl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vhdl.js","./languages/vim":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vim.js","./languages/x86asm":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/x86asm.js","./languages/xl":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/xl.js","./languages/xml":"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/xml.js"}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/1c.js":[function(require,module,exports){
+},{"./highlight":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/highlight.js","./languages/1c":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/1c.js","./languages/actionscript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/actionscript.js","./languages/apache":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/apache.js","./languages/applescript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/applescript.js","./languages/asciidoc":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/asciidoc.js","./languages/aspectj":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/aspectj.js","./languages/autohotkey":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/autohotkey.js","./languages/avrasm":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/avrasm.js","./languages/axapta":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/axapta.js","./languages/bash":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/bash.js","./languages/brainfuck":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/brainfuck.js","./languages/capnproto":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/capnproto.js","./languages/clojure":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/clojure.js","./languages/clojure-repl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/clojure-repl.js","./languages/cmake":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cmake.js","./languages/coffeescript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/coffeescript.js","./languages/cpp":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cpp.js","./languages/cs":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cs.js","./languages/css":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/css.js","./languages/d":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/d.js","./languages/dart":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dart.js","./languages/delphi":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/delphi.js","./languages/diff":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/diff.js","./languages/django":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/django.js","./languages/dos":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dos.js","./languages/dust":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dust.js","./languages/elixir":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/elixir.js","./languages/erb":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erb.js","./languages/erlang":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erlang.js","./languages/erlang-repl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erlang-repl.js","./languages/fix":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/fix.js","./languages/fsharp":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/fsharp.js","./languages/gcode":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gcode.js","./languages/gherkin":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gherkin.js","./languages/glsl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/glsl.js","./languages/go":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/go.js","./languages/gradle":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gradle.js","./languages/groovy":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/groovy.js","./languages/haml":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haml.js","./languages/handlebars":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/handlebars.js","./languages/haskell":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haskell.js","./languages/haxe":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haxe.js","./languages/http":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/http.js","./languages/ini":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ini.js","./languages/java":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/java.js","./languages/javascript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/javascript.js","./languages/json":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/json.js","./languages/lasso":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lasso.js","./languages/less":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/less.js","./languages/lisp":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lisp.js","./languages/livecodeserver":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/livecodeserver.js","./languages/livescript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/livescript.js","./languages/lua":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lua.js","./languages/makefile":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/makefile.js","./languages/markdown":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/markdown.js","./languages/mathematica":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mathematica.js","./languages/matlab":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/matlab.js","./languages/mel":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mel.js","./languages/mercury":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mercury.js","./languages/mizar":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mizar.js","./languages/monkey":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/monkey.js","./languages/nginx":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nginx.js","./languages/nimrod":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nimrod.js","./languages/nix":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nix.js","./languages/nsis":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nsis.js","./languages/objectivec":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/objectivec.js","./languages/ocaml":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ocaml.js","./languages/oxygene":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/oxygene.js","./languages/parser3":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/parser3.js","./languages/perl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/perl.js","./languages/php":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/php.js","./languages/powershell":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/powershell.js","./languages/processing":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/processing.js","./languages/profile":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/profile.js","./languages/protobuf":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/protobuf.js","./languages/puppet":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/puppet.js","./languages/python":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/python.js","./languages/q":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/q.js","./languages/r":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/r.js","./languages/rib":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rib.js","./languages/roboconf":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/roboconf.js","./languages/rsl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rsl.js","./languages/ruby":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ruby.js","./languages/ruleslanguage":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ruleslanguage.js","./languages/rust":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rust.js","./languages/scala":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scala.js","./languages/scheme":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scheme.js","./languages/scilab":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scilab.js","./languages/scss":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scss.js","./languages/smali":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/smali.js","./languages/smalltalk":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/smalltalk.js","./languages/sml":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/sml.js","./languages/sql":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/sql.js","./languages/stata":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/stata.js","./languages/step21":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/step21.js","./languages/stylus":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/stylus.js","./languages/swift":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/swift.js","./languages/tcl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/tcl.js","./languages/tex":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/tex.js","./languages/thrift":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/thrift.js","./languages/twig":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/twig.js","./languages/typescript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/typescript.js","./languages/vala":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vala.js","./languages/vbnet":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbnet.js","./languages/vbscript":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbscript.js","./languages/vbscript-html":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbscript-html.js","./languages/verilog":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/verilog.js","./languages/vhdl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vhdl.js","./languages/vim":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vim.js","./languages/x86asm":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/x86asm.js","./languages/xl":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/xl.js","./languages/xml":"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/xml.js"}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/1c.js":[function(require,module,exports){
 module.exports = function(hljs){
   var IDENT_RE_RU = '[a-zA-Zа-яА-Я][a-zA-Z0-9_а-яА-Я]*';
   var OneS_KEYWORDS = 'возврат дата для если и или иначе иначеесли исключение конецесли ' +
@@ -1041,7 +1041,7 @@ module.exports = function(hljs){
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/actionscript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/actionscript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
   var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
@@ -1115,7 +1115,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/apache.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/apache.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var NUMBER = {className: 'number', begin: '[\\$%]\\d+'};
   return {
@@ -1161,7 +1161,7 @@ module.exports = function(hljs) {
     illegal: /\S/
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/applescript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/applescript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var STRING = hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: ''});
   var PARAMS = {
@@ -1257,7 +1257,7 @@ module.exports = function(hljs) {
     illegal: '//|->|=>'
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/asciidoc.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/asciidoc.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -1446,7 +1446,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/aspectj.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/aspectj.js":[function(require,module,exports){
 module.exports = function (hljs) {
   var KEYWORDS =
     'false synchronized int abstract float private char boolean static null if const ' +
@@ -1582,7 +1582,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/autohotkey.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/autohotkey.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var BACKTICK_ESCAPE = {
     className: 'escape',
@@ -1642,7 +1642,7 @@ module.exports = function(hljs) {
     ])
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/avrasm.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/avrasm.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -1698,7 +1698,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/axapta.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/axapta.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: 'false int abstract private char boolean static null if for true ' +
@@ -1729,7 +1729,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/bash.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/bash.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR = {
     className: 'variable',
@@ -1805,7 +1805,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/brainfuck.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/brainfuck.js":[function(require,module,exports){
 module.exports = function(hljs){
   var LITERAL = {
     className: 'literal',
@@ -1841,7 +1841,7 @@ module.exports = function(hljs){
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/capnproto.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/capnproto.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['capnp'],
@@ -1890,7 +1890,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/clojure-repl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/clojure-repl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -1905,7 +1905,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/clojure.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/clojure.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var keywords = {
     built_in:
@@ -2004,7 +2004,7 @@ module.exports = function(hljs) {
     contains: [LIST, STRING, HINT, HINT_COL, COMMENT, KEY, COLLECTION, NUMBER, LITERAL]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cmake.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cmake.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['cmake.in'],
@@ -2043,7 +2043,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/coffeescript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/coffeescript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -2191,7 +2191,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cpp.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cpp.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var CPP_KEYWORDS = {
     keyword: 'false int float while private char catch export virtual operator sizeof ' +
@@ -2294,7 +2294,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/cs.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/cs.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS =
     // Normal keywords.
@@ -2394,7 +2394,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/css.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/css.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z-][a-zA-Z0-9_-]*';
   var FUNCTION = {
@@ -2498,7 +2498,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/d.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/d.js":[function(require,module,exports){
 module.exports = /**
  * Known issues:
  *
@@ -2755,7 +2755,7 @@ function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dart.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dart.js":[function(require,module,exports){
 module.exports = function (hljs) {
   var SUBST = {
     className: 'subst',
@@ -2854,7 +2854,7 @@ module.exports = function (hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/delphi.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/delphi.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS =
     'exports register file shl array record property for mod while set ally label uses raise not ' +
@@ -2913,7 +2913,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/diff.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/diff.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['patch'],
@@ -2953,7 +2953,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/django.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/django.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var FILTER = {
     className: 'filter',
@@ -3009,7 +3009,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dos.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dos.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT = {
     className: 'comment',
@@ -3056,7 +3056,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/dust.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/dust.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var EXPRESSION_KEYWORDS = 'if eq ne lt lte gt gte select default math sep';
   return {
@@ -3091,7 +3091,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/elixir.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/elixir.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var ELIXIR_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?';
   var ELIXIR_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
@@ -3200,7 +3200,7 @@ module.exports = function(hljs) {
     contains: ELIXIR_DEFAULT_CONTAINS
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erb.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erb.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml', subLanguageMode: 'continuous',
@@ -3218,7 +3218,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erlang-repl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erlang-repl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -3269,7 +3269,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/erlang.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/erlang.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var BASIC_ATOM_RE = '[a-z\'][a-zA-Z0-9_\']*';
   var FUNCTION_NAME_RE = '(' + BASIC_ATOM_RE + ':' + BASIC_ATOM_RE + '|' + BASIC_ATOM_RE + ')';
@@ -3424,7 +3424,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/fix.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/fix.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -3453,7 +3453,7 @@ module.exports = function(hljs) {
     case_insensitive: true
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/fsharp.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/fsharp.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var TYPEPARAM = {
     begin: '<', end: '>',
@@ -3512,7 +3512,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gcode.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gcode.js":[function(require,module,exports){
 module.exports = function(hljs) {
     var GCODE_IDENT_RE = '[A-Z_][A-Z0-9_.]*';
     var GCODE_CLOSE_RE = '\\%';
@@ -3589,7 +3589,7 @@ module.exports = function(hljs) {
         ].concat(GCODE_CODE)
     };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gherkin.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gherkin.js":[function(require,module,exports){
 module.exports = function (hljs) {
   return {
     aliases: ['feature'],
@@ -3620,7 +3620,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/glsl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/glsl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -3714,7 +3714,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/go.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/go.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var GO_KEYWORDS = {
     keyword:
@@ -3753,7 +3753,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/gradle.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/gradle.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -3788,7 +3788,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/groovy.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/groovy.js":[function(require,module,exports){
 module.exports = function(hljs) {
     return {
         keywords: {
@@ -3874,7 +3874,7 @@ module.exports = function(hljs) {
         ]
     }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haml.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haml.js":[function(require,module,exports){
 module.exports = // TODO support filter tags like :javascript, support inline HTML
 function(hljs) {
   return {
@@ -3996,7 +3996,7 @@ function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/handlebars.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/handlebars.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var EXPRESSION_KEYWORDS = 'each in with if else unless bindattr action collection debugger log outlet template unbound view yield';
   return {
@@ -4029,7 +4029,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haskell.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haskell.js":[function(require,module,exports){
 module.exports = function(hljs) {
 
   var COMMENT = {
@@ -4155,7 +4155,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/haxe.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/haxe.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
   var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
@@ -4216,7 +4216,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/http.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/http.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     illegal: '\\S',
@@ -4250,7 +4250,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ini.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ini.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -4280,7 +4280,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/java.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/java.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var GENERIC_IDENT_RE = hljs.UNDERSCORE_IDENT_RE + '(<' + hljs.UNDERSCORE_IDENT_RE + '>)?';
   var KEYWORDS =
@@ -4364,7 +4364,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/javascript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/javascript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['js'],
@@ -4439,7 +4439,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/json.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/json.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var LITERALS = {literal: 'true false null'};
   var TYPES = [
@@ -4477,7 +4477,7 @@ module.exports = function(hljs) {
     illegal: '\\S'
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lasso.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lasso.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var LASSO_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_.]*';
   var LASSO_ANGLE_RE = '<\\?(lasso(script)?|=)';
@@ -4662,7 +4662,7 @@ module.exports = function(hljs) {
     ].concat(LASSO_CODE)
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/less.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/less.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE        = '[\\w-]+'; // yes, Less identifiers may begin with a digit
   var INTERP_IDENT_RE = '(' + IDENT_RE + '|@{' + IDENT_RE + '})+';
@@ -4799,7 +4799,7 @@ module.exports = function(hljs) {
     contains: RULES
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lisp.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lisp.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var LISP_IDENT_RE = '[a-zA-Z_\\-\\+\\*\\/\\<\\=\\>\\&\\#][a-zA-Z0-9_\\-\\+\\*\\/\\<\\=\\>\\&\\#!]*';
   var MEC_RE = '\\|[^]*?\\|';
@@ -4896,7 +4896,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/livecodeserver.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/livecodeserver.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     className: 'variable', begin: '\\b[gtps][A-Z]+[A-Za-z0-9_\\-]*\\b|\\$_[A-Z]+',
@@ -5065,7 +5065,7 @@ module.exports = function(hljs) {
     illegal: ';$|^\\[|^='
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/livescript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/livescript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -5219,7 +5219,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/lua.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/lua.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var OPENING_LONG_BRACKET = '\\[=*\\[';
   var CLOSING_LONG_BRACKET = '\\]=*\\]';
@@ -5276,7 +5276,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/makefile.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/makefile.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     className: 'variable',
@@ -5322,7 +5322,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/markdown.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/markdown.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['md', 'mkdown', 'mkd'],
@@ -5424,7 +5424,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mathematica.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mathematica.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['mma'],
@@ -5483,7 +5483,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/matlab.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/matlab.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMON_CONTAINS = [
     hljs.C_NUMBER_MODE,
@@ -5577,7 +5577,7 @@ module.exports = function(hljs) {
     ].concat(COMMON_CONTAINS)
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mel.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mel.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -5807,7 +5807,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mercury.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mercury.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -5896,7 +5896,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/mizar.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/mizar.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -5918,7 +5918,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/monkey.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/monkey.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var NUMBER = {
     className: 'number', relevance: 0,
@@ -5997,7 +5997,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nginx.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nginx.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR = {
     className: 'variable',
@@ -6079,7 +6079,7 @@ module.exports = function(hljs) {
     illegal: '[^\\s\\}]'
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nimrod.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nimrod.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -6134,7 +6134,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nix.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nix.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var NIX_KEYWORDS = {
     keyword: 'rec with let in inherit assert if else then',
@@ -6184,7 +6184,7 @@ module.exports = function(hljs) {
     contains: EXPRESSIONS
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/nsis.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/nsis.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var CONSTANTS = {
     className: 'symbol',
@@ -6270,7 +6270,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/objectivec.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/objectivec.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var OBJC_KEYWORDS = {
     keyword:
@@ -6357,7 +6357,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ocaml.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ocaml.js":[function(require,module,exports){
 module.exports = function(hljs) {
   /* missing support for heredoc-like string (OCaml 4.0.2+) */
   return {
@@ -6425,7 +6425,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/oxygene.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/oxygene.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var OXYGENE_KEYWORDS = 'abstract add and array as asc aspect assembly async begin break block by case class concat const copy constructor continue '+
     'create default delegate desc distinct div do downto dynamic each else empty end ensure enum equals event except exit extension external false '+
@@ -6490,7 +6490,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/parser3.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/parser3.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml', relevance: 0,
@@ -6535,7 +6535,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/perl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/perl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var PERL_KEYWORDS = 'getpwent getservent quotemeta msgrcv scalar kill dbmclose undef lc ' +
     'ma syswrite tr send umask sysopen shmwrite vec qx utime local oct semctl localtime ' +
@@ -6684,7 +6684,7 @@ module.exports = function(hljs) {
     contains: PERL_DEFAULT_CONTAINS
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/php.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/php.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     className: 'variable', begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
@@ -6794,7 +6794,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/powershell.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/powershell.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var backtickEscape = {
     begin: '`[\\s\\S]',
@@ -6846,7 +6846,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/processing.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/processing.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -6894,7 +6894,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/profile.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/profile.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -6936,7 +6936,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/protobuf.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/protobuf.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -6973,7 +6973,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/puppet.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/puppet.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var PUPPET_TYPE_REFERENCE =
       'augeas computer cron exec file filebucket host interface k5login macauthorization mailalias maillist mcx mount nagios_command ' +
@@ -7083,7 +7083,7 @@ module.exports = function(hljs) {
     contains: PUPPET_DEFAULT_CONTAINS
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/python.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/python.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var PROMPT = {
     className: 'prompt',  begin: /^(>>>|\.\.\.) /
@@ -7168,7 +7168,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/q.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/q.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var Q_KEYWORDS = {
   keyword:
@@ -7191,7 +7191,7 @@ module.exports = function(hljs) {
      ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/r.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/r.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*';
 
@@ -7261,7 +7261,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rib.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rib.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -7288,7 +7288,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/roboconf.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/roboconf.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENTIFIER = '[a-zA-Z-_][^\n{\r\n]+\\{';
 
@@ -7348,7 +7348,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rsl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rsl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -7385,7 +7385,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ruby.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ruby.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var RUBY_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
   var RUBY_KEYWORDS =
@@ -7557,7 +7557,7 @@ module.exports = function(hljs) {
     contains: [COMMENT].concat(IRB_DEFAULT).concat(RUBY_DEFAULT_CONTAINS)
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/ruleslanguage.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/ruleslanguage.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -7614,7 +7614,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/rust.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/rust.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var BLOCK_COMMENT = hljs.inherit(hljs.C_BLOCK_COMMENT_MODE);
   BLOCK_COMMENT.contains.push('self');
@@ -7687,7 +7687,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scala.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scala.js":[function(require,module,exports){
 module.exports = function(hljs) {
 
   var ANNOTATION = {
@@ -7760,7 +7760,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scheme.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scheme.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var SCHEME_IDENT_RE = '[^\\(\\)\\[\\]\\{\\}",\'`;#|\\\\\\s]+';
   var SCHEME_SIMPLE_NUMBER_RE = '(\\-|\\+)?\\d+([./]\\d+)?';
@@ -7879,7 +7879,7 @@ module.exports = function(hljs) {
     contains: [SHEBANG, NUMBER, STRING, COMMENT, QUOTED_IDENT, LIST]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scilab.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scilab.js":[function(require,module,exports){
 module.exports = function(hljs) {
 
   var COMMON_CONTAINS = [
@@ -7937,7 +7937,7 @@ module.exports = function(hljs) {
     ].concat(COMMON_CONTAINS)
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/scss.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/scss.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z-][a-zA-Z0-9_-]*';
   var VARIABLE = {
@@ -8054,7 +8054,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/smali.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/smali.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var smali_instr_low_prio = ['add', 'and', 'cmp', 'cmpg', 'cmpl', 'const', 'div', 'double', 'float', 'goto', 'if', 'int', 'long', 'move', 'mul', 'neg', 'new', 'nop', 'not', 'or', 'rem', 'return', 'shl', 'shr', 'sput', 'sub', 'throw', 'ushr', 'xor'];
   var smali_instr_high_prio = ['aget', 'aput', 'array', 'check', 'execute', 'fill', 'filled', 'goto/16', 'goto/32', 'iget', 'instance', 'invoke', 'iput', 'monitor', 'packed', 'sget', 'sparse'];
@@ -8135,7 +8135,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/smalltalk.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/smalltalk.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR_IDENT_RE = '[a-z][a-zA-Z0-9_]*';
   var CHAR = {
@@ -8191,7 +8191,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/sml.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/sml.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['ml'],
@@ -8254,7 +8254,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/sql.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/sql.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT_MODE = {
     className: 'comment',
@@ -8357,7 +8357,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/stata.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/stata.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['do', 'ado'],
@@ -8398,7 +8398,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/step21.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/step21.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var STEP21_IDENT_RE = '[A-Z_][A-Z0-9_.]*';
   var STEP21_CLOSE_RE = 'END-ISO-10303-21;';
@@ -8454,7 +8454,7 @@ module.exports = function(hljs) {
     ].concat(STEP21_CODE)
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/stylus.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/stylus.js":[function(require,module,exports){
 module.exports = function(hljs) {
 
   var VARIABLE = {
@@ -8896,7 +8896,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/swift.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/swift.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var SWIFT_KEYWORDS = {
       keyword: 'class deinit enum extension func import init let protocol static ' +
@@ -9005,7 +9005,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/tcl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/tcl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['tk'],
@@ -9072,7 +9072,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/tex.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/tex.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMAND1 = {
     className: 'command',
@@ -9125,7 +9125,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/thrift.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/thrift.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILT_IN_TYPES = 'bool byte i16 i32 i64 double string binary';
   return {
@@ -9161,7 +9161,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/twig.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/twig.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var PARAMS = {
     className: 'params',
@@ -9221,7 +9221,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/typescript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/typescript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['ts'],
@@ -9308,7 +9308,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vala.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vala.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -9363,7 +9363,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbnet.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbnet.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['vb'],
@@ -9414,7 +9414,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbscript-html.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbscript-html.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml', subLanguageMode: 'continuous',
@@ -9426,7 +9426,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vbscript.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vbscript.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['vbs'],
@@ -9463,7 +9463,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/verilog.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/verilog.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['v'],
@@ -9513,7 +9513,7 @@ module.exports = function(hljs) {
     ]
   }; // return
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vhdl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vhdl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -9556,7 +9556,7 @@ module.exports = function(hljs) {
     ]
   }; // return
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/vim.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/vim.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     lexemes: /[!#@\w]+/,
@@ -9619,7 +9619,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/x86asm.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/x86asm.js":[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -9766,7 +9766,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/xl.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/xl.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILTIN_MODULES = 'ObjectLoader Animate MovieCredits Slides Filters Shading Materials LensFlare Mapping VLCAudioVideo StereoDecoder PointCloud NetworkAccess RemoteControl RegExp ChromaKey Snowfall NodeJS Speech Charts';
 
@@ -9846,7 +9846,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/highlight.js/lib/languages/xml.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/highlight.js/lib/languages/xml.js":[function(require,module,exports){
 module.exports = function(hljs) {
   var XML_IDENT_RE = '[A-Za-z0-9\\._:-]+';
   var PHP = {
@@ -9947,7 +9947,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"/home/eric/repos/binary-chart/node_modules/lodash/index.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/node_modules/lodash/index.js":[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -21755,7 +21755,7 @@ module.exports = function(hljs) {
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{}],"/home/eric/repos/binary-chart/src/booleanchart/BooleanChart.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/booleanchart/BooleanChart.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -21842,7 +21842,10 @@ module.exports = React.createClass({displayName: "exports",
               height:  props.stackedChartInnerHeight
             }, 
               React.createElement("g", {transform: trans, className: props.className}, 
-                React.createElement(XAxis, {
+               
+                // If it's the last series, we display the x axis
+                // otherwise, it's a dotted line
+                idx === props.data.length - 1 ? React.createElement(XAxis, {
                   xAxisClassName: "rd3-linechart-xaxis", 
                   tickFormatting: props.xAxisFormatter, 
                   xAxisLabel: props.xAxisLabel, 
@@ -21853,8 +21856,13 @@ module.exports = React.createClass({displayName: "exports",
                   width: innerWidth, 
                   height: stackedChartInnerHeight, 
                   stroke: props.axesColor, 
-                  strokeWidth: props.strokeWidth}
-                ), 
+                  strokeWidth: props.strokeWidth})
+                : React.createElement("line", {
+                    strokeWidth: "1", 
+                    stroke: "black", 
+                    strokeDasharray: "5, 4", 
+                    x1: "0", y1: stackedChartInnerHeight, x2: innerWidth, y2: stackedChartInnerHeight}), 
+              
                 React.createElement(StackedChart, {
                   xScale: scales.xScale, 
                   yScale: yScale, 
@@ -21899,7 +21907,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{"../common":"/home/eric/repos/binary-chart/src/common/index.js","../mixins":"/home/eric/repos/binary-chart/src/mixins/index.js","../utils":"/home/eric/repos/binary-chart/src/utils/index.js","./StackedChart":"/home/eric/repos/binary-chart/src/booleanchart/StackedChart.jsx"}],"/home/eric/repos/binary-chart/src/booleanchart/StackedChart.jsx":[function(require,module,exports){
+},{"../common":"/home/eric/repos/boolean-chart/src/common/index.js","../mixins":"/home/eric/repos/boolean-chart/src/mixins/index.js","../utils":"/home/eric/repos/boolean-chart/src/utils/index.js","./StackedChart":"/home/eric/repos/boolean-chart/src/booleanchart/StackedChart.jsx"}],"/home/eric/repos/boolean-chart/src/booleanchart/StackedChart.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22085,12 +22093,12 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/booleanchart/index.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/booleanchart/index.js":[function(require,module,exports){
 exports.BooleanChart = require('./BooleanChart');
 
 
 
-},{"./BooleanChart":"/home/eric/repos/binary-chart/src/booleanchart/BooleanChart.jsx"}],"/home/eric/repos/binary-chart/src/common/Legend.jsx":[function(require,module,exports){
+},{"./BooleanChart":"/home/eric/repos/boolean-chart/src/booleanchart/BooleanChart.jsx"}],"/home/eric/repos/boolean-chart/src/common/Legend.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22163,7 +22171,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/Voronoi.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/Voronoi.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22226,7 +22234,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/axes/AxisLine.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/axes/AxisLine.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22297,7 +22305,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/axes/AxisTicks.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/axes/AxisTicks.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22403,7 +22411,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/axes/Label.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/axes/Label.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22465,7 +22473,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/axes/XAxis.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/axes/XAxis.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22547,7 +22555,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{"./AxisLine":"/home/eric/repos/binary-chart/src/common/axes/AxisLine.jsx","./AxisTicks":"/home/eric/repos/binary-chart/src/common/axes/AxisTicks.jsx","./Label":"/home/eric/repos/binary-chart/src/common/axes/Label.jsx"}],"/home/eric/repos/binary-chart/src/common/axes/YAxis.jsx":[function(require,module,exports){
+},{"./AxisLine":"/home/eric/repos/boolean-chart/src/common/axes/AxisLine.jsx","./AxisTicks":"/home/eric/repos/boolean-chart/src/common/axes/AxisTicks.jsx","./Label":"/home/eric/repos/boolean-chart/src/common/axes/Label.jsx"}],"/home/eric/repos/boolean-chart/src/common/axes/YAxis.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22626,14 +22634,14 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{"./AxisLine":"/home/eric/repos/binary-chart/src/common/axes/AxisLine.jsx","./AxisTicks":"/home/eric/repos/binary-chart/src/common/axes/AxisTicks.jsx"}],"/home/eric/repos/binary-chart/src/common/axes/index.js":[function(require,module,exports){
+},{"./AxisLine":"/home/eric/repos/boolean-chart/src/common/axes/AxisLine.jsx","./AxisTicks":"/home/eric/repos/boolean-chart/src/common/axes/AxisTicks.jsx"}],"/home/eric/repos/boolean-chart/src/common/axes/index.js":[function(require,module,exports){
 
 exports.XAxis = require('./XAxis');
 exports.YAxis = require('./YAxis');
 
 
 
-},{"./XAxis":"/home/eric/repos/binary-chart/src/common/axes/XAxis.jsx","./YAxis":"/home/eric/repos/binary-chart/src/common/axes/YAxis.jsx"}],"/home/eric/repos/binary-chart/src/common/charts/BasicChart.jsx":[function(require,module,exports){
+},{"./XAxis":"/home/eric/repos/boolean-chart/src/common/axes/XAxis.jsx","./YAxis":"/home/eric/repos/boolean-chart/src/common/axes/YAxis.jsx"}],"/home/eric/repos/boolean-chart/src/common/charts/BasicChart.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22654,7 +22662,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/common/charts/Chart.jsx":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/common/charts/Chart.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22686,7 +22694,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{"./BasicChart":"/home/eric/repos/binary-chart/src/common/charts/BasicChart.jsx","./LegendChart":"/home/eric/repos/binary-chart/src/common/charts/LegendChart.jsx"}],"/home/eric/repos/binary-chart/src/common/charts/LegendChart.jsx":[function(require,module,exports){
+},{"./BasicChart":"/home/eric/repos/boolean-chart/src/common/charts/BasicChart.jsx","./LegendChart":"/home/eric/repos/boolean-chart/src/common/charts/LegendChart.jsx"}],"/home/eric/repos/boolean-chart/src/common/charts/LegendChart.jsx":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22743,7 +22751,7 @@ module.exports = React.createClass({displayName: "exports",
 
 
 
-},{"../Legend":"/home/eric/repos/binary-chart/src/common/Legend.jsx"}],"/home/eric/repos/binary-chart/src/common/charts/index.js":[function(require,module,exports){
+},{"../Legend":"/home/eric/repos/boolean-chart/src/common/Legend.jsx"}],"/home/eric/repos/boolean-chart/src/common/charts/index.js":[function(require,module,exports){
 
 exports.BasicChart = require('./BasicChart');
 exports.Chart = require('./Chart');
@@ -22751,7 +22759,7 @@ exports.LegendChart = require('./LegendChart');
 
 
 
-},{"./BasicChart":"/home/eric/repos/binary-chart/src/common/charts/BasicChart.jsx","./Chart":"/home/eric/repos/binary-chart/src/common/charts/Chart.jsx","./LegendChart":"/home/eric/repos/binary-chart/src/common/charts/LegendChart.jsx"}],"/home/eric/repos/binary-chart/src/common/index.js":[function(require,module,exports){
+},{"./BasicChart":"/home/eric/repos/boolean-chart/src/common/charts/BasicChart.jsx","./Chart":"/home/eric/repos/boolean-chart/src/common/charts/Chart.jsx","./LegendChart":"/home/eric/repos/boolean-chart/src/common/charts/LegendChart.jsx"}],"/home/eric/repos/boolean-chart/src/common/index.js":[function(require,module,exports){
 
 exports.XAxis = require('./axes').XAxis;
 exports.YAxis = require('./axes').YAxis;
@@ -22762,12 +22770,12 @@ exports.Voronoi = require('./Voronoi');
 
 
 
-},{"./Legend":"/home/eric/repos/binary-chart/src/common/Legend.jsx","./Voronoi":"/home/eric/repos/binary-chart/src/common/Voronoi.jsx","./axes":"/home/eric/repos/binary-chart/src/common/axes/index.js","./charts":"/home/eric/repos/binary-chart/src/common/charts/index.js"}],"/home/eric/repos/binary-chart/src/index.js":[function(require,module,exports){
+},{"./Legend":"/home/eric/repos/boolean-chart/src/common/Legend.jsx","./Voronoi":"/home/eric/repos/boolean-chart/src/common/Voronoi.jsx","./axes":"/home/eric/repos/boolean-chart/src/common/axes/index.js","./charts":"/home/eric/repos/boolean-chart/src/common/charts/index.js"}],"/home/eric/repos/boolean-chart/src/index.js":[function(require,module,exports){
 exports.BooleanChart = require('./booleanchart').BooleanChart;
 
 
 
-},{"./booleanchart":"/home/eric/repos/binary-chart/src/booleanchart/index.js"}],"/home/eric/repos/binary-chart/src/mixins/CartesianChartPropsMixin.js":[function(require,module,exports){
+},{"./booleanchart":"/home/eric/repos/boolean-chart/src/booleanchart/index.js"}],"/home/eric/repos/boolean-chart/src/mixins/CartesianChartPropsMixin.js":[function(require,module,exports){
 'use strict';
 
 var React = (window.React);
@@ -22827,13 +22835,13 @@ module.exports =  {
 
 
 
-},{}],"/home/eric/repos/binary-chart/src/mixins/index.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/src/mixins/index.js":[function(require,module,exports){
 
 exports.CartesianChartPropsMixin = require('./CartesianChartPropsMixin');
 
 
 
-},{"./CartesianChartPropsMixin":"/home/eric/repos/binary-chart/src/mixins/CartesianChartPropsMixin.js"}],"/home/eric/repos/binary-chart/src/utils/index.js":[function(require,module,exports){
+},{"./CartesianChartPropsMixin":"/home/eric/repos/boolean-chart/src/mixins/CartesianChartPropsMixin.js"}],"/home/eric/repos/boolean-chart/src/utils/index.js":[function(require,module,exports){
 var d3 = (window.d3);
 
 
@@ -22982,7 +22990,7 @@ exports.shade = function(hex, percent)  {
 
 
 
-},{}],"/home/eric/repos/binary-chart/utils/datagen.js":[function(require,module,exports){
+},{}],"/home/eric/repos/boolean-chart/utils/datagen.js":[function(require,module,exports){
 
 exports.generateArrayOfPoints = function(n) {
   var data = [];
