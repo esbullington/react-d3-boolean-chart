@@ -19,17 +19,22 @@ module.exports = React.createClass({
   mixins: [ CartesianChartPropsMixin ],
 
   propTypes: {
+    dottedLine: React.PropTypes.bool,
+    lineWidth: React.PropTypes.string,
+    lineColor: React.PropTypes.string,
     margins: React.PropTypes.object,
     stackedChartMargins: React.PropTypes.object,
+    stackedChartHeight: React.PropTypes.number,
     colors: React.PropTypes.func,
-    displayDataPoints: React.PropTypes.bool,
     booleanLabels: React.PropTypes.object,
     stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps() {
     return {
-      stackedChartHeight: 120,
+      dottedLine: true,
+      lineWidth: "1",
+      lineColor: "black",
       margins: {top: 10, right: 20, bottom: 40, left: 45},
       stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
@@ -50,13 +55,15 @@ module.exports = React.createClass({
 
     var chartHeight = props.height / numberItems;
 
+    var stackedChartHeight = props.stackedChartHeight || chartHeight;
+
     // Calculate inner stacked chart dimensions
     var innerWidth, innerHeight;
     innerWidth = props.width - props.margins.left - props.margins.right;
     innerHeight = props.height - props.margins.top - props.margins.bottom;
 
     var stackedChartInnerHeight;
-    stackedChartInnerHeight = props.stackedChartHeight - props.stackedChartMargins.top - props.stackedChartMargins.bottom;
+    stackedChartInnerHeight = stackedChartHeight - props.stackedChartMargins.top - props.stackedChartMargins.bottom;
 
     if (props.legend) {
       innerWidth = innerWidth - props.legendOffset;
@@ -80,7 +87,7 @@ module.exports = React.createClass({
           return (
             <svg
               key={idx}
-              y={idx * (props.stackedChartHeight)}
+              y={idx * (stackedChartHeight)}
               width={props.width}
               height={ props.stackedChartInnerHeight }
             >
@@ -89,7 +96,7 @@ module.exports = React.createClass({
                 // If it's the last series, we display the x axis
                 // otherwise, it's a dotted line
                 idx === props.data.length - 1 ? <XAxis
-                  xAxisClassName='rd3-linechart-xaxis'
+                  xAxisClassName='rd3-booleanchart-xaxis'
                   tickFormatting={props.xAxisFormatter}
                   xAxisLabel={props.xAxisLabel}
                   xAxisLabelOffset={props.xAxisLabelOffset}
@@ -101,9 +108,9 @@ module.exports = React.createClass({
                   stroke={props.axesColor}
                   strokeWidth={props.strokeWidth}/>
                 : <line 
-                    strokeWidth="1"
-                    stroke="black"
-                    strokeDasharray="5, 4"
+                    strokeWidth={props.lineWidth}
+                    stroke={props.lineColor}
+                    strokeDasharray={props.dottedLine ? "5, 4" : "5, 0"}
                     x1="0" y1={stackedChartInnerHeight} x2={innerWidth} y2={stackedChartInnerHeight} />
               }
                 <StackedChart
@@ -115,10 +122,10 @@ module.exports = React.createClass({
                   key={series.name}
                   xAccessor={props.xAccessor}
                   yAccessor={props.yAccessor}
-                  booleanLabels={series.booleanLabels ? series.yAxisLabels : props.booleanLabels}
+                  booleanLabels={series.booleanLabels ? series.booleanLabels : props.booleanLabels}
                   stackedChartIndex={idx}
                   stackedChartTop={idx * (stackedChartInnerHeight)}
-                  stackedChartHeight={stackedChartInnerHeight}
+                  stackedChartInnerHeight={stackedChartInnerHeight}
                   stackedChartLabel={props.stackedChartLabel}
                 />
               </g>

@@ -57,7 +57,7 @@ module.exports = React.createClass({
 
     var yScale = d3.scale.ordinal()
       .domain([true, false])
-      .rangeBands([0, props.stackedChartHeight/2]);
+      .rangeBands([0, props.stackedChartInnerHeight/2]);
 
     // Create array of paths, which we'll map over
     // to generate SVG lines
@@ -102,14 +102,14 @@ module.exports = React.createClass({
         x2 = props.xScale(xAccessor(nextPoint));
       }
 
-      var squareWaveOffset = props.stackedChartHeight/props.squareWaveOffsetDivisor;
+      var squareWaveOffset = props.stackedChartInnerHeight/props.squareWaveOffsetDivisor;
 
       if (yAccessor(point)) {
         y1 = squareWaveOffset;
         y2 = squareWaveOffset;
       } else {
-        y1 = props.stackedChartHeight - squareWaveOffset;
-        y2 = props.stackedChartHeight - squareWaveOffset;
+        y1 = props.stackedChartInnerHeight - squareWaveOffset;
+        y2 = props.stackedChartInnerHeight - squareWaveOffset;
       }
 
       var prevy2, prevy1;
@@ -117,8 +117,8 @@ module.exports = React.createClass({
         prevy1 = squareWaveOffset;
         prevy2 = squareWaveOffset;
       } else {
-        prevy1 = props.stackedChartHeight - squareWaveOffset;
-        prevy2 = props.stackedChartHeight - squareWaveOffset;
+        prevy1 = props.stackedChartInnerHeight - squareWaveOffset;
+        prevy2 = props.stackedChartInnerHeight - squareWaveOffset;
       }
  
       var isNotSameValue = yAccessor(point) !== yAccessor(nextPoint);
@@ -129,7 +129,7 @@ module.exports = React.createClass({
         // y1 and y1 are always equal to the difference between 
         // the height of the stacked chart less the squareWaveOffset
         // and the squareWaveOffset itself
-        y1: props.stackedChartHeight - squareWaveOffset,
+        y1: props.stackedChartInnerHeight - squareWaveOffset,
         y2: squareWaveOffset
       };
 
@@ -171,14 +171,14 @@ module.exports = React.createClass({
           textAnchor='middle'
           dy="0.25em"
           x={-25}
-          y={props.stackedChartHeight - (props.stackedChartHeight/props.squareWaveOffsetDivisor)}
+          y={props.stackedChartInnerHeight - (props.stackedChartInnerHeight/props.squareWaveOffsetDivisor)}
         >{props.booleanLabels.off}</text>
         <text
           dy="0.25em"
           strokeWidth='0.01'
           textAnchor='middle'
           x={-25}
-          y={props.stackedChartHeight/props.squareWaveOffsetDivisor}
+          y={props.stackedChartInnerHeight/props.squareWaveOffsetDivisor}
         >{props.booleanLabels.on}</text>
       </g>
     );
