@@ -45,7 +45,7 @@ var Demos = React.createClass({displayName: "Demos",
               legend: true, 
               data: booleanData, 
               width: 550, 
-              height: 600, 
+              height: 400, 
               title: "Boolean Chart", 
               xAxisLabel: "Time (sec)", 
               xAxisTickCount: 4, 
@@ -74,7 +74,7 @@ var Demos = React.createClass({displayName: "Demos",
             React.createElement("pre", {ref: "block"}, 
               React.createElement("code", {className: "html"}, 
               
-("<BooleanChart\n  legend={true}\n  data={booleanData}\n  width={550}\n  height={600}\n  title=\"Boolean Chart\"\n  xAxisLabel=\"Time (sec)\"\n  xAxisTickCount={4}\n  xAccessor={ (point) => point.timeStamp }\n  yAccessor={ (point) => point.value }\n/>"
+("<BooleanChart\n  legend={true}\n  data={booleanData}\n  width={550}\n  height={400}\n  title=\"Boolean Chart\"\n  xAxisLabel=\"Time (sec)\"\n  xAxisTickCount={4}\n  xAccessor={ (point) => point.timeStamp }\n  yAccessor={ (point) => point.value }\n/>"
 
 
 
@@ -21784,17 +21784,22 @@ module.exports = React.createClass({
   mixins: [ CartesianChartPropsMixin ],
 
   propTypes: {
+    dottedLine: React.PropTypes.bool,
+    lineWidth: React.PropTypes.string,
+    lineColor: React.PropTypes.string,
     margins: React.PropTypes.object,
     stackedChartMargins: React.PropTypes.object,
+    stackedChartHeight: React.PropTypes.number,
     colors: React.PropTypes.func,
-    displayDataPoints: React.PropTypes.bool,
     booleanLabels: React.PropTypes.object,
     stackedChartLabel: React.PropTypes.bool
   },
 
   getDefaultProps:function() {
     return {
-      stackedChartHeight: 120,
+      dottedLine: true,
+      lineWidth: "1",
+      lineColor: "black",
       margins: {top: 10, right: 20, bottom: 40, left: 45},
       stackedChartMargins: {top: 20, right: 20, bottom: 20, left: 45},
       className: 'rd3-booleanchart',
@@ -21815,13 +21820,15 @@ module.exports = React.createClass({
 
     var chartHeight = props.height / numberItems;
 
+    var stackedChartHeight = props.stackedChartHeight || chartHeight;
+
     // Calculate inner stacked chart dimensions
     var innerWidth, innerHeight;
     innerWidth = props.width - props.margins.left - props.margins.right;
     innerHeight = props.height - props.margins.top - props.margins.bottom;
 
     var stackedChartInnerHeight;
-    stackedChartInnerHeight = props.stackedChartHeight - props.stackedChartMargins.top - props.stackedChartMargins.bottom;
+    stackedChartInnerHeight = stackedChartHeight - props.stackedChartMargins.top - props.stackedChartMargins.bottom;
 
     if (props.legend) {
       innerWidth = innerWidth - props.legendOffset;
@@ -21845,7 +21852,7 @@ module.exports = React.createClass({
           return (
             React.createElement("svg", {
               key: idx, 
-              y: idx * (props.stackedChartHeight), 
+              y: idx * (stackedChartHeight), 
               width: props.width, 
               height:  props.stackedChartInnerHeight
             }, 
@@ -21854,7 +21861,7 @@ module.exports = React.createClass({
                 // If it's the last series, we display the x axis
                 // otherwise, it's a dotted line
                 idx === props.data.length - 1 ? React.createElement(XAxis, {
-                  xAxisClassName: "rd3-linechart-xaxis", 
+                  xAxisClassName: "rd3-booleanchart-xaxis", 
                   tickFormatting: props.xAxisFormatter, 
                   xAxisLabel: props.xAxisLabel, 
                   xAxisLabelOffset: props.xAxisLabelOffset, 
@@ -21866,9 +21873,9 @@ module.exports = React.createClass({
                   stroke: props.axesColor, 
                   strokeWidth: props.strokeWidth})
                 : React.createElement("line", {
-                    strokeWidth: "1", 
-                    stroke: "black", 
-                    strokeDasharray: "5, 4", 
+                    strokeWidth: props.lineWidth, 
+                    stroke: props.lineColor, 
+                    strokeDasharray: props.dottedLine ? "5, 4" : "5, 0", 
                     x1: "0", y1: stackedChartInnerHeight, x2: innerWidth, y2: stackedChartInnerHeight}), 
               
                 React.createElement(StackedChart, {
@@ -21880,10 +21887,10 @@ module.exports = React.createClass({
                   key: series.name, 
                   xAccessor: props.xAccessor, 
                   yAccessor: props.yAccessor, 
-                  booleanLabels: series.booleanLabels ? series.yAxisLabels : props.booleanLabels, 
+                  booleanLabels: series.booleanLabels ? series.booleanLabels : props.booleanLabels, 
                   stackedChartIndex: idx, 
                   stackedChartTop: idx * (stackedChartInnerHeight), 
-                  stackedChartHeight: stackedChartInnerHeight, 
+                  stackedChartInnerHeight: stackedChartInnerHeight, 
                   stackedChartLabel: props.stackedChartLabel}
                 )
               )
@@ -21976,7 +21983,7 @@ module.exports = React.createClass({
 
     var yScale = d3.scale.ordinal()
       .domain([true, false])
-      .rangeBands([0, props.stackedChartHeight/2]);
+      .rangeBands([0, props.stackedChartInnerHeight/2]);
 
     // Create array of paths, which we'll map over
     // to generate SVG lines
@@ -22021,14 +22028,14 @@ module.exports = React.createClass({
         x2 = props.xScale(xAccessor(nextPoint));
       }
 
-      var squareWaveOffset = props.stackedChartHeight/props.squareWaveOffsetDivisor;
+      var squareWaveOffset = props.stackedChartInnerHeight/props.squareWaveOffsetDivisor;
 
       if (yAccessor(point)) {
         y1 = squareWaveOffset;
         y2 = squareWaveOffset;
       } else {
-        y1 = props.stackedChartHeight - squareWaveOffset;
-        y2 = props.stackedChartHeight - squareWaveOffset;
+        y1 = props.stackedChartInnerHeight - squareWaveOffset;
+        y2 = props.stackedChartInnerHeight - squareWaveOffset;
       }
 
       var prevy2, prevy1;
@@ -22036,8 +22043,8 @@ module.exports = React.createClass({
         prevy1 = squareWaveOffset;
         prevy2 = squareWaveOffset;
       } else {
-        prevy1 = props.stackedChartHeight - squareWaveOffset;
-        prevy2 = props.stackedChartHeight - squareWaveOffset;
+        prevy1 = props.stackedChartInnerHeight - squareWaveOffset;
+        prevy2 = props.stackedChartInnerHeight - squareWaveOffset;
       }
  
       var isNotSameValue = yAccessor(point) !== yAccessor(nextPoint);
@@ -22048,7 +22055,7 @@ module.exports = React.createClass({
         // y1 and y1 are always equal to the difference between 
         // the height of the stacked chart less the squareWaveOffset
         // and the squareWaveOffset itself
-        y1: props.stackedChartHeight - squareWaveOffset,
+        y1: props.stackedChartInnerHeight - squareWaveOffset,
         y2: squareWaveOffset
       };
 
@@ -22090,14 +22097,14 @@ module.exports = React.createClass({
           textAnchor: "middle", 
           dy: "0.25em", 
           x: -25, 
-          y: props.stackedChartHeight - (props.stackedChartHeight/props.squareWaveOffsetDivisor)
+          y: props.stackedChartInnerHeight - (props.stackedChartInnerHeight/props.squareWaveOffsetDivisor)
         }, props.booleanLabels.off), 
         React.createElement("text", {
           dy: "0.25em", 
           strokeWidth: "0.01", 
           textAnchor: "middle", 
           x: -25, 
-          y: props.stackedChartHeight/props.squareWaveOffsetDivisor
+          y: props.stackedChartInnerHeight/props.squareWaveOffsetDivisor
         }, props.booleanLabels.on)
       )
     );
