@@ -14,7 +14,7 @@ Please see online [example documentation](https://github.com/esbullington/react-
 
 ### Sponsorship
 
-This chart was made possible through the sponsorship of the [engineering firm](http://www.jbysewski.de/) of Jakob Bysewski, Saarlouis, Germany.
+This chart was conceived and sponsored by the [engineering firm](http://www.jbysewski.de/) of Jakob Bysewski, Saarlouis, Germany.
 
 ### License
 
