@@ -26,7 +26,7 @@ describe('BooleanChart', function() {
     expect(booleanchartGroup.tagName).to.equal('G');
 
     var axis = TestUtils.scryRenderedDOMComponentsWithClass(
-      booleanchart, 'rd3-linechart-axis');
+      booleanchart, 'rd3-booleanchart-axis');
     expect(axis).to.exist;
 
   });

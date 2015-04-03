@@ -47,8 +47,12 @@ module.exports = React.createClass({
 
     var props = this.props;
 
+    var data;
+
     if (!Array.isArray(props.data)) {
-      props.data = [props.data];
+      data = [props.data];
+    } else {
+      data = props.data;
     }
 
     var numberItems = props.data.length;
@@ -69,7 +73,7 @@ module.exports = React.createClass({
       innerWidth = innerWidth - props.legendOffset;
     }
 
-    var flattenedData = utils.flattenData(props.data, props.xAccessor, props.yAccessor);
+    var flattenedData = utils.flattenData(data, props.xAccessor, props.yAccessor);
 
     var allValues = flattenedData.allValues,
         xValues = flattenedData.xValues,
@@ -83,7 +87,7 @@ module.exports = React.createClass({
       .domain([true, false])
       .rangeBands([0, props.stackedChartInnerHeight/2]);
 
-    var charts = props.data.map( (series, idx) => {
+    var charts = data.map( (series, idx) => {
           return (
             <svg
               key={idx}
@@ -95,7 +99,7 @@ module.exports = React.createClass({
               { 
                 // If it's the last series, we display the x axis
                 // otherwise, it's a dotted line
-                idx === props.data.length - 1 ? <XAxis
+                idx === data.length - 1 ? <XAxis
                   xAxisClassName='rd3-booleanchart-xaxis'
                   tickFormatting={props.xAxisFormatter}
                   xAxisLabel={props.xAxisLabel}
@@ -135,7 +139,7 @@ module.exports = React.createClass({
     return <Chart
             viewBox={props.viewBox}
             legend={props.legend}
-            data={props.data}
+            data={data}
             margins={props.margins}
             colors={props.colors}
             width={props.width}
